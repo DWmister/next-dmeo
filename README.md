@@ -20,6 +20,14 @@ yarn start
 ```
 yarn export
 ```
+### add eslint
+```bash
+npx install-peerdeps -D eslint-config-nextjs
+```
+### eslint fix
+```bash
+yarn lint
+```
 
 
 ### about modules

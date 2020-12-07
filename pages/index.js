@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout from '../components/layout'
-import Date from '../components/date'
+import Head from 'next/head';
+import Link from 'next/link';
+import Layout from '../components/layout';
+import Date from '../components/date';
 
-import styles from './index.module.scss'
-import utilStyles from '../styles/utils.module.scss'
-import { getSortedPostsData } from '../lib/posts'
+import styles from './index.module.scss';
+import utilStyles from '../styles/utils.module.scss';
+import { getSortedPostsData } from '../lib/posts';
 
 export default function Home({ allPostsData }) {
   return (
@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-  )
+  );
 }
 
 /**
@@ -50,10 +50,10 @@ export default function Home({ allPostsData }) {
  * 5. In Development runs on every request; In Prod runs at build time
  */
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData
     }
-  }
+  };
 }

@@ -1,14 +1,14 @@
-import Link from "next/link"
-import Head from 'next/head'
+import Link from 'next/link';
+import Head from 'next/head';
 
-import styles from './layout.module.scss'
-import utilStyles from '../styles/utils.module.scss'
+import styles from './layout.module.scss';
+import utilStyles from '../styles/utils.module.scss';
 
-const name = "lalaal"
+const name = 'lalaal';
 
 export default function Layout({ children, home }) {
   return (
-    <div className={ styles.container }>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="/images/favicon.ico" />
         <meta
@@ -57,5 +57,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
